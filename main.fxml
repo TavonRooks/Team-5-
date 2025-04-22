@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.team5.travelassistant.controller.MainController"
+            prefWidth="800" prefHeight="500">
+
+    <children>
+
+        <Label layoutX="20" layoutY="20" text="Name:" />
+        <TextField fx:id="nameField" layoutX="100" layoutY="15" prefWidth="220">
+            <tooltip><Tooltip text="Enter your full name (max 50 characters)" /></tooltip>
+        </TextField>
+
+        <Label layoutX="20" layoutY="60" text="Email:" />
+        <TextField fx:id="emailField" layoutX="100" layoutY="55" prefWidth="220">
+            <tooltip><Tooltip text="Enter a valid email address" /></tooltip>
+        </TextField>
+
+        <Label layoutX="20" layoutY="100" text="Budget:" />
+        <TextField fx:id="budgetField" layoutX="100" layoutY="95" prefWidth="220">
+            <tooltip><Tooltip text="Enter your budget in USD (e.g., 1000)" /></tooltip>
+        </TextField>
+
+        <Label layoutX="20" layoutY="140" text="Interests:" />
+        <TextField fx:id="interestsField" layoutX="100" layoutY="135" prefWidth="220">
+            <tooltip><Tooltip text="Comma-separated interests like beach, culture, food" /></tooltip>
+        </TextField>
+
+        <Label layoutX="20" layoutY="180" text="Concerns:" />
+        <TextField fx:id="concernsField" layoutX="100" layoutY="175" prefWidth="220">
+            <tooltip><Tooltip text="Any special travel concerns (e.g. safety, accessibility)" /></tooltip>
+        </TextField>
+
+        <Button fx:id="saveButton" layoutX="100" layoutY="220" prefWidth="100" text="Save User"
+                onAction="#handleSaveUser" />
+        <Button fx:id="recommendButton" layoutX="210" layoutY="220" prefWidth="150" text="Get Recommendation"
+                onAction="#handleRecommend" />
+
+        <Label layoutX="20" layoutY="270" text="Rate Suggestion:" />
+        <ComboBox fx:id="feedbackField" layoutX="130" layoutY="265" prefWidth="80" />
+        <Button fx:id="submitFeedbackButton" layoutX="220" layoutY="265" prefWidth="130" text="Submit Feedback"
+                onAction="#handleSubmitFeedback" />
+
+        <Label layoutX="360" layoutY="10" text="AI Recommendation:" />
+        <TextArea fx:id="resultArea" layoutX="360" layoutY="30" prefWidth="420" prefHeight="190" wrapText="true" editable="false" />
+
+        <Label layoutX="360" layoutY="230" text="Recommendation History:" />
+        <TextArea fx:id="historyArea" layoutX="360" layoutY="250" prefWidth="420" prefHeight="200" wrapText="true" editable="false" />
+
+    </children>
+</AnchorPane>
