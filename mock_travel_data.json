@@ -1,0 +1,23 @@
+[
+  {
+    "destination": "Hawaii",
+    "hotel": "Beachside Resort",
+    "flight": "Hawaiian Airlines - Economy",
+    "activities": "Surfing, Beach parties, Volcano tour",
+    "cost": 950.0
+  },
+  {
+    "destination": "Rome",
+    "hotel": "Historic Inn",
+    "flight": "Alitalia - Economy",
+    "activities": "Colosseum tour, Museums, Italian cuisine",
+    "cost": 820.0
+  },
+  {
+    "destination": "Kyoto",
+    "hotel": "Traditional Ryokan",
+    "flight": "ANA Airlines - Economy",
+    "activities": "Temple visits, Zen gardens, Sushi making",
+    "cost": 880.0
+  }
+]
